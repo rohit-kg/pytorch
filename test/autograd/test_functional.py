@@ -902,7 +902,7 @@ class TestAutogradFunctional(TestCase):
             self.assertEqual(result_forward_mode, expected)
 
     @base_and_logging_tensor
-    def test_jacobian_vectorize_correctness_simple_2(self, ctors):
+    def test_jacobian_vectorize_correctness_simple(self, ctors):
         def f(x):
             return 3 * x**2
 
